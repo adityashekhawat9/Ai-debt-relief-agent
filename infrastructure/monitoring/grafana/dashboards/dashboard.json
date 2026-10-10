@@ -1,0 +1,25 @@
+{
+  "title": "AI Voice Platform — Overview",
+  "panels": [
+    {
+      "type": "gauge",
+      "title": "Active Calls",
+      "targets": [{"expr": "active_calls_total"}]
+    },
+    {
+      "type": "timeseries",
+      "title": "HTTP Request Rate",
+      "targets": [{"expr": "rate(http_requests_total[5m])"}]
+    },
+    {
+      "type": "stat",
+      "title": "LLM Latency p95",
+      "targets": [{"expr": "histogram_quantile(0.95, llm_first_token_seconds_bucket)"}]
+    },
+    {
+      "type": "stat",
+      "title": "DNC Blocks",
+      "targets": [{"expr": "dnc_blocks_total"}]
+    }
+  ]
+}

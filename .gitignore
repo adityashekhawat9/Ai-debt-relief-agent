@@ -1,0 +1,77 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+env
+**/env
+*.env.local
+*.env.production
+*.orig
+
+# AI Models (multi-GB files)
+/models/
+*.gguf
+*.onnx
+*.bin
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+.turbo/
+
+# Docker
+.docker/
+
+# Logs
+logs/
+*.log
+
+# Database
+*.sqlite
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.lnk
+*Recycle Bin*
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Test artifacts
+.pytest_cache/
+coverage.xml
+junit.xml
+
+# Recordings (large audio files)
+recordings/
+backend/records/
+backend/.cache/
+*.wav
+*.mp3
+*.ogg
